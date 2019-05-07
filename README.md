@@ -1,8 +1,9 @@
-# face-reco-app
-Face recognition CrowdCompute Application that is running as a HTTP server. 
-Gets images as an input and returns URL links of the faces.
+# Face recognition CrowdCompute App
 
-How to build and run the docker container:
+This app is running as an HTTP server. 
+It gets images as an input and returns URL links of the faces in a JSON format.
+
+# Build and run
 
 docker build -t face_reco .
 docker run -p 3000:3000 --rm face_reco
