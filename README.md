@@ -8,7 +8,7 @@ It gets images as an input and returns URL links of the faces in a JSON format.
 
 ## Build
 
--t tags the docker image with the name *face_reco*
+-t flag tags the docker image with the name *face_reco*
 
 ```
 docker build -t face_reco .
