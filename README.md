@@ -20,7 +20,7 @@ docker run -p 3000:3000 --rm face_reco
 
 Feed the app with images using a POST HTTP request.
 
-Call *localhost:3000/face_reco* to upload images:
+Call **localhost:3000/face_reco** to upload images:
 
-Content-Disposition: form-data; *name="images"*;
+Content-Disposition: form-data; **name="images"**;
  
