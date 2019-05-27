@@ -39,7 +39,9 @@ def upload():
     if request.method == 'POST':
         for image_bytes in request.files.getlist('images'):
             if not file_check(image_bytes):
-                return 'Uploaded files are not supported...'
+                error_msg =  'Uploaded file ''{}'' is not supported...'.format(image_bytes.filename)
+                print(error_msg)
+                return error_msg
             image = Image.open(image_bytes)
             face_urls = face_recognize(image)
             json_urls[image_bytes.filename] = face_urls
