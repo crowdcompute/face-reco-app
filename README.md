@@ -30,4 +30,4 @@ Call `localhost:3000/face_reco` to upload images.
 
 Parameters:
 
-**images**
+**images** : The images you want face recognize
